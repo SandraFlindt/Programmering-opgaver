@@ -9,6 +9,7 @@
 
             myLager.AddSpil("Ludo");
             myLager.AddSpil("Skak");
+            myLager.AddSpil("Matador");
 
             foreach (var spil in myLager.GetSpil())
             {
