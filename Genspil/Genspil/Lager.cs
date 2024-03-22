@@ -8,11 +8,17 @@ namespace Genspil
 {
     internal class Lager
     {
-        public string spilNavn;
-       
-        public Lager(string spilNavn)
+        List<string> MineSpil = new List<string>();
+
+        public void AddSpil(string spil)
         {
-            this.spilNavn = spilNavn;
+            MineSpil.Add(spil);
         }
+
+        public List<string> GetSpil()
+        { 
+            return MineSpil; 
+        }
+
     }
 }

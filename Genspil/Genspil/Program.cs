@@ -4,15 +4,16 @@
     {
         static void Main(string[] args)
         {
-         List<String> SpilListe = new List<String>();
 
-         Lager myLager = new Lager("Ludo");
+            Lager myLager = new Lager();
 
-       
-            SpilListe.Add(myLager.spilNavn);
+            myLager.AddSpil("Ludo");
+            myLager.AddSpil("Skak");
 
-            Console.WriteLine(myLager.spilNavn);
-
+            foreach (var spil in myLager.GetSpil())
+            {
+                Console.WriteLine(spil);
+            }
         }
     }
 }
