@@ -6,14 +6,15 @@
         {
 
             Lager myLager = new Lager();
+            var mySpil = new Spil("Ludo", "", "", 0);
+            myLager.AddSpil(mySpil);
 
-            myLager.AddSpil("Ludo");
-            myLager.AddSpil("Skak");
-            myLager.AddSpil("Matador");
-
+            mySpil = new Spil("Skak", "", "", 0);
+            myLager.AddSpil(mySpil);
+           
             foreach (var spil in myLager.GetSpil())
             {
-                Console.WriteLine(spil);
+                Console.WriteLine(spil.Getname());
             }
         }
     }
